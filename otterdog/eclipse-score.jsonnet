@@ -955,9 +955,9 @@ orgs.newOrg('automotive.score', 'eclipse-score') {
           allows_force_pushes: false,
           required_status_checks+: {
             status_checks+: [
-              "Build & Test (Host) / Build & Test",
-              "Linter Checks / copyright",
-              "Linter Checks / ruff",
+              "Build & Test",
+              "copyright",
+              "ruff",
             ],
           },
           required_merge_queue: orgs.newMergeQueue() {
